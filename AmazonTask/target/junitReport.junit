@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="52.393">
+    <testcase classname="Browser Launch and Search" name="Launch Browser and Navigate to URL" time="32.245">
+        <failure message="timeout: Timed out receiving message from renderer: 26.994&#10;  (Session info: chrome=127.0.6533.120)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'ZEBRONICS', ip: '192.168.31.219', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\AJVJ~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61679}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: dfb44df8a422fe5a1f568854055cf30d" type="org.openqa.selenium.TimeoutException">
+            <![CDATA[Given I launch the browser..................................................passed
+When I navigate to the URL..................................................failed
+Then the browser should be open and URL should be loaded....................skipped
+
+StackTrace:
+org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 26.994
+  (Session info: chrome=127.0.6533.120)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ZEBRONICS', ip: '192.168.31.219', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.22'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.120, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\Users\AJVJ~1\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61679}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dfb44df8a422fe5a1f568854055cf30d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.baseclass.BaseClass.getUrl(BaseClass.java:74)
+	at org.step.CucumberStepDefinition.i_navigate_to_the_URL(CucumberStepDefinition.java:37)
+	at ✽.I navigate to the URL(file:///C:/Testing/AmazonTask/src/test/resources/amazonProduct.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Browser Launch and Search" name="User searches for a product" time="19.409">
+        <system-out>
+            <![CDATA[Given I am on the login page................................................passed
+When I search for a user....................................................passed
+And I select the first result...............................................passed
+And I go to the next page...................................................passed
+Then I should see the search results........................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Browser Launch and Search" name="Print Product Information" time="0.59">
+        <system-out>
+            <![CDATA[Given I am on the product filter page.......................................passed
+When I filter for Apple Watches.............................................passed
+Then I should see at least 10 Apple Watches.................................passed
+And print the 10th Apple Watch..............................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
